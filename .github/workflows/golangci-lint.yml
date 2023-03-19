@@ -1,16 +1,9 @@
 name: golangci-lint
 on:
   push:
-    tags:
-      - v*
-    branches:
-      - master
-      - main
+    branches: [ "master" ]
   pull_request:
-permissions:
-  contents: read
-  # Optional: allow read access to pull request. Use with `only-new-issues` option.
-  # pull-requests: read
+    branches: [ "master" ]
 jobs:
   golangci:
     name: lint
