@@ -8,6 +8,6 @@ import (
 func main() {
 	A := 1
 	B := 2
-	C := strconv.Itoa(A+B)
+	C := strconv.Itoa(A + B)
 	fmt.Println(C + "hooyah")
 }
