@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 func main() {
-	fmt.Println("hooyah")
+	A := 1
+	B := 2
+	C := strconv.Itoa(A+B)
+	fmt.Println(C + "hooyah")
 }
